@@ -1,0 +1,43 @@
+<div ng-controller="clienteController" data-ng-init="carregarClientes()">
+	<h3>{{titulo}}</h3>
+	
+	<table class="table">
+	  <thead class="thead-light">
+	  	<tr>
+	    	<th scope="col" colspan="9">
+				<input class="form-control" type="text" ng-model="criterioDeBusca" placeholder="Pesquisa por CPF">
+			</th>
+			<th scope="col">
+	      		<a href="pedido/cadastrar" class="btn btn-primary btn-ms">Cadastrar</a>
+	      	</th>
+	    </tr>
+	    <tr>
+	    	<th scope="col">Nome</th>
+	    	<th scope="col">CPF</th>
+      		<th scope="col">Idade</th>
+	      	<th scope="col">Sexo</th>
+	      	<th scope="col">Estado Civil</th>
+	      	<th scope="col">Estado</th>
+	      	<th scope="col">Dependentes</th>
+	      	<th scope="col">Renda R$</th>
+	      	<th scope="col">Resultado Analise</th>
+	      	<th scope="col">Limite</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr ng-repeat="cliente in clientes | filter:{cpf:criterioDeBusca}">
+	      <th scope="row">{{ cliente.nome }}</th>
+	      <th scope="row">{{ cliente.cpf }}</th>
+	      <th scope="row">{{ cliente.idade }}</th>
+	      <th scope="row">{{ cliente.sexo == 1 ? 'M' : 'F' }}</th>
+	      <th scope="row">{{ cliente.estadoCivil }}</th>
+	      <th scope="row">{{ cliente.estado }}</th>
+	      <th scope="row">{{ cliente.dependentes }}</th>
+	      <th scope="row">{{ cliente.renda }}</th>
+	      <th scope="row">{{ cliente.resultadoAnalise ? 'Aprovado':'Negado' }}</th>
+	      <th scope="row">{{ cliente.limite }}</th>
+	    </tr>
+	  </tbody>
+	</table>
+	
+</div>

@@ -1,0 +1,16 @@
+com\credito\calculador\AnaliseFinalizadora.class
+com\credito\calculador\AnaliseDependenteFeminino.class
+com\config\SwaggerConfigurations.class
+com\credito\enums\EstadoCivilEnum.class
+com\credito\calculador\Calculador.class
+com\credito\calculador\AnaliseDivorciado.class
+com\credito\controller\PaginaController.class
+com\credito\calculador\AnaliseDependenteMasculino.class
+com\credito\enums\SexoEnum.class
+com\credito\domain\Cliente.class
+com\credito\controller\ClienteController.class
+com\credito\repository\ClienteRepository.class
+com\credito\CreditoApplication.class
+com\credito\calculador\AnaliseRendaBaixa.class
+com\credito\calculador\AnaliseMaisDeSessentaAnos.class
+com\credito\calculador\Analise.class

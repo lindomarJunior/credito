@@ -1,0 +1,86 @@
+<div ng-controller="clienteController">
+	<h3>Cadastro Cliente</h3>
+	<form name="formCliente" ng-submit="adicionarCliente()">
+		<table class="table">
+       		<tr>
+       			<td>Nome</td>
+		     	<td><input class="form-control" type="text" id="campoNome" placeholder="Nome do cliente" ng-model="cliente.nome" required></td>
+		    </tr>
+		    <tr>
+       			<td>CPF</td>	
+		     	<td><input class="form-control" type="text" id="campoCpf" placeholder="CPF" ng-model="cliente.cpf"></td>
+		    </tr> 
+		    <tr>
+       			<td>Idade</td>	
+		     	<td><input class="form-control" type="text" id="campoIdade" placeholder="Idade do cliente" ng-model="cliente.idade"></td>
+		    </tr> 	 
+		    <tr>
+       			<td>Sexo</td> 	
+		     	<td>
+	     			<select class="form-control" ng-model="cliente.sexo">
+			          <option value="1">Masculino</option>
+			          <option value="2">Feminino</option>
+		        	</select>
+		     	</td> 
+		    </tr> 	
+		    <tr>
+       			<td>Estado Civil</td> 	
+		     	<td>
+		     		<select class="form-control" ng-model="cliente.estadoCivil">
+			          <option value="SOLTEIRO">Solteiro</option>
+			          <option value="CASADO">Casado</option>
+			          <option value="DIVORCIADO">Divorciado</option>
+			          <option value="VIUVO">Viuvo</option>
+		        	</select>
+		     	</td> 
+		    </tr> 	
+		    <tr>
+       			<td>Estado</td> 	
+		     	<td>
+		     		<select class="form-control" ng-model="cliente.estado">
+			          	<option value="AC">Acre</option>
+					    <option value="AL">Alagoas</option>
+					    <option value="AP">Amapá</option>
+					    <option value="AM">Amazonas</option>
+					    <option value="BA">Bahia</option>
+					    <option value="CE">Ceará</option>
+					    <option value="DF">Distrito Federal</option>
+					    <option value="ES">Espírito Santo</option>
+					    <option value="GO">Goiás</option>
+					    <option value="MA">Maranhão</option>
+					    <option value="MT">Mato Grosso</option>
+					    <option value="MS">Mato Grosso do Sul</option>
+					    <option value="MG">Minas Gerais</option>
+					    <option value="PA">Pará</option>
+					    <option value="PB">Paraíba</option>
+					    <option value="PR">Paraná</option>
+					    <option value="PE">Pernambuco</option>
+					    <option value="PI">Piauí</option>
+					    <option value="RJ">Rio de Janeiro</option>
+					    <option value="RN">Rio Grande do Norte</option>
+					    <option value="RS">Rio Grande do Sul</option>
+					    <option value="RO">Rondônia</option>
+					    <option value="RR">Roraima</option>
+					    <option value="SC">Santa Catarina</option>
+					    <option value="SP">São Paulo</option>
+					    <option value="SE">Sergipe</option>
+					    <option value="TO">Tocantins</option>
+		        	</select>
+		     	</td> 
+		    </tr> 	
+		    <tr>
+       			<td>Dependentes</td> 	
+		     	<td><input class="form-control" type="text" id="campoDependentes" ng-model="cliente.dependentes"></td> 
+		    </tr> 	
+		    <tr>
+       			<td>Renda R$</td> 	
+		     	<td><input class="form-control" type="text" id="campoRenda" ng-model="cliente.renda"></td>   
+		    </tr> 
+		    <tr>
+		    	<td colspan="2">		
+		     	<button type="submit" class="btn btn-success btn-ms">Salvar</button>
+		     	</td>
+		     </tr>	
+	 	</table>    
+     </form>
+</div>
