@@ -9,6 +9,8 @@ services:
  docker-postgres:
     image: postgres:10.4
     environment:
-      - POSTGRES_DB=credito
+      - POSTGRES_DB=creditos
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123
+    ports:
+      - "5433:5432"  
